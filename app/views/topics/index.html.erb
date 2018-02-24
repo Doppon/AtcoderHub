@@ -1,2 +1,6 @@
-<h1>Topics#index</h1>
-<p>Find me in app/views/topics/index.html.erb</p>
+<h2>トピック一覧</h2>
+<ul>
+  <% @topics.each do |topic| %>
+    <li><%= link_to topic.title, topics_show_path(topic.id) %></li>
+  <% end %>
+</ul>
