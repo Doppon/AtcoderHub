@@ -1,7 +1,10 @@
 <h2>トピック一覧</h2>
 <ul>
   <% @topics.each do |topic| %>
-    <li><%= link_to topic.title, topics_show_path(topic.id) %></li>
+    <li>
+    <%= link_to topic.title, topics_show_path(topic.id) %>
+    <%= link_to '[削除]', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %> 
+    </li>
   <% end %>
 </ul>
 
