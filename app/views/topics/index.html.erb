@@ -11,5 +11,5 @@
 <h2>トピック新規登録</h2>
 <%= form_for @newTopic, :url => {:action => 'create'} do |f| %>
   <%= f.text_field :title %>
-  <%= f.submit %>
+  <%= f.submit(['新しいトピックを追加']) %>
 <% end %>
