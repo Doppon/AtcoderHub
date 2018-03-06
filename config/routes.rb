@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   delete 'topics/delete/:id' => 'topics#delete', as: :topic_delete
 
   post 'posts/create' => 'post#create', as: :post_create
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  delete 'posts/delete/:id' =>  'post#delete', as: :post_delete
 end
