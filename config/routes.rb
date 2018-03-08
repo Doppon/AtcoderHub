@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'topics#index'
+
   get 'topics/index'
 
   get 'topics/show/:id' => 'topics#show', as: :topics_show
