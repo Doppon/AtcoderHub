@@ -6,4 +6,4 @@
 - [本番環境のDBエラーに困っています（rails）](https://teratail.com/questions/77287)
 
 ## デプロイ先
-- https://fathomless-cliffs-16205.herokuapp.com/
+- https://bbs-by-rails.herokuapp.com/
