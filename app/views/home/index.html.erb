@@ -1,2 +1,13 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h2 class="topic_title">トピック一覧</h2>
+<% @topics.each do |topic| %>
+  <div class="topic_content">
+    <%= link_to topic.title, topics_show_path(topic.id) %>
+    <%= link_to '[削除]', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %> 
+  </div>
+<% end %>
+
+<h2 class="topic_new">トピック新規登録</h2>
+<%= form_for @newTopic, :url => {:action => 'create'} do |f| %>
+  <%= f.text_field :title, :class => 'topic_form' %>
+  <%= f.submit(['新しいトピックを追加'], :class => 'topic_form_input')%>
+<% end %>
