@@ -10,13 +10,13 @@ class TopicsController < ApplicationController
   def create
     @topic = Topic.new(params[:topic].permit(:title))
     @topic.save
-    redirect_to topics_index_path
+    redirect_to home_index_path
   end
 
   def delete
     @topic = Topic.find(params[:id])
     @topic.destroy
-    redirect_to topics_index_path
+    redirect_to home_index_path
   end
 
   private
