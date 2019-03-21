@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: 'home#index'
     get 'home/index'
+    get 'topics/index'
   end
 
   root to: 'home#index'
