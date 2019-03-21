@@ -1,11 +1,6 @@
 class TopicsController < ApplicationController
   before_action :basic, only: [:show]
 
-  def index
-    @topics = Topic.all
-    @newTopic = Topic.new
-  end
-
   def show
     @topic = Topic.find(params[:id])
     @newpost = Post.new(topic_id: params[:id])
