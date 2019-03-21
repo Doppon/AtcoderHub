@@ -1,0 +1,5 @@
+<h2 class="center">トピック新規登録</h2>
+<%= form_for @newTopic, url: {controller: 'topics', action: 'create'} do |f| %>
+  <%= f.text_field :title, :class => 'topic_form' %>
+  <%= f.submit(['新しいトピックを追加'], :class => 'topic_form_input')%>
+<% end %>
