@@ -33,7 +33,6 @@ gem 'jbuilder', '~> 2.5'
 
 gem "actionview", ">= 5.2.2.1"
 
-gem 'bootstrap-sass'
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 
