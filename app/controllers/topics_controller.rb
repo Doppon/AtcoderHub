@@ -6,6 +6,9 @@ class TopicsController < ApplicationController
     @posts = Post.where(topic_id: params[:id])
   end
 
+  def new
+  end
+
   def create
     @topic = Topic.new(params[:topic].permit(:title))
     @topic.save
