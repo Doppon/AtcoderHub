@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem "actionview", ">= 5.2.2.1"
 
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
+
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
