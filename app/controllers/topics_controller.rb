@@ -1,4 +1,6 @@
 class TopicsController < ApplicationController
+  before_action :basic, only: [:show]
+
   def index
     @topics = Topic.all
     @newTopic = Topic.new
@@ -20,5 +22,13 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
     @topic.destroy
     redirect_to topics_index_path
+  end
+
+  private
+  def basic
+    authenticate_or_request_with_http_basic do |name, password|
+      # name == ENV['BASIC_AUTH_NAME'] && password == ENV['BASIC_AUTH_PASSWORD']
+      name == "name" && password == "pass"
+    end
   end
 end
