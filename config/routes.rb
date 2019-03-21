@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'home/index'
   root to: 'topics#index'
+  get 'home/index'
   get 'topics/index'
   get 'topics/show/:id' => 'topics#show', as: :topics_show
   post 'topics/create' => 'topics#create'
