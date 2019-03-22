@@ -6,6 +6,7 @@
 - [本番環境のDBエラーに困っています（rails）](https://teratail.com/questions/77287)
 - [herokuのdeployの時にpermission deniedで弾かれた時の対処法](https://qiita.com/sebeckawamura/items/3a96d4270da4143952ab)
 - [Rails(5)namespace でファイルを分ける方法](https://qiita.com/maggam/items/5c361558559f1c3488bf)
+- [Bootstrap Form おさらい](https://qiita.com/zaburo/items/8983993d173c51cb3827)
 
 ## デプロイ先
 - https://bbs-by-rails.herokuapp.com/
