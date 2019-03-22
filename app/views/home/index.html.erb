@@ -1,6 +1,5 @@
 <div class="container">
   <h2 class="topic_title">トピック一覧</h2>
-
   <table class="table">
     <thead>
       <tr>
@@ -15,9 +14,6 @@
       <% end %>
     </tbody>
   </table>
-
-  <!-- <%= link_to '[削除]', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %> -->
-
   <div>
     <%= link_to "新しいトピックを作成する", topics_new_path %>
   </div>
