@@ -1,9 +1,9 @@
 <div class="container">
   <h2><%= @topic.title %></h2>
-  <% @posts.each_with_index do |post , idx| %>
-    <p>
-      <%= idx + 1 %>. <%= post.name %> : <%= post.body %>
-      <%= link_to '[削除]', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>     
+  <% @posts.each do |post| %>
+    <p class="text-center">
+      <%= post.name %> : <%= post.body %>
+      <%= link_to '削除', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>     
     </p>
   <% end %>
 
