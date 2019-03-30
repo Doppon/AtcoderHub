@@ -8,6 +8,6 @@ class PostController < ApplicationController
   def delete
     @post = Post.find(params[:id])
     @post.delete
-    redirect_to topics_index_path
+    redirect_to home_index_path
   end
 end
