@@ -1,6 +1,7 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
+// ToDo: topicの方に移行する必要あり
 .chat-hukidashi {
   display: inline-block; /*コメントの文字数に合わせて可変*/
   padding: 15px 20px;
