@@ -17,7 +17,8 @@
       <h2 class="text-center"><%= @topic.title %></h2>
       <% @posts.each do |post| %>
         <p>
-          <%= post.name %> : <div class="chat-hukidashi someone"><%= post.body %></div>
+          <div style="display: inline-block;"><%= post.name %> : </div>
+          <div class="chat-hukidashi someone"><%= post.body %></div>
           <%= link_to '削除', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>     
         </p>
       <% end %>
