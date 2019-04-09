@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   namespace :admin do
     root to: 'home#index'
     get 'home/index'
