@@ -8,6 +8,7 @@
 - [Rails(5)namespace でファイルを分ける方法](https://qiita.com/maggam/items/5c361558559f1c3488bf)
 - [Bootstrap Form おさらい](https://qiita.com/zaburo/items/8983993d173c51cb3827)
 - [Bootstrap使い方メモ１（基本＋CSS）](https://qiita.com/opengl-8080/items/2764b6db143b1a4411f6)
+- [【rails】gemを使わずにログイン機能を実装！](https://qiita.com/hayatoa/items/33584b9be47b09424472)
 
 ## デプロイ先
 - https://bbs-by-rails.herokuapp.com/
