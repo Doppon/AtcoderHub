@@ -9,6 +9,7 @@
 - [Bootstrap Form おさらい](https://qiita.com/zaburo/items/8983993d173c51cb3827)
 - [Bootstrap使い方メモ１（基本＋CSS）](https://qiita.com/opengl-8080/items/2764b6db143b1a4411f6)
 - [【rails】gemを使わずにログイン機能を実装！](https://qiita.com/hayatoa/items/33584b9be47b09424472)
+- [Railsのセッション管理には何が最適か](https://qiita.com/shota_matsukawa_ga/items/a21c5cf49a1de6c9561a)
 
 ## デプロイ先
 - https://bbs-by-rails.herokuapp.com/
