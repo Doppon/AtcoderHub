@@ -7,8 +7,10 @@ class Admin::HomeController < ApplicationController
   private
   def basic
     authenticate_or_request_with_http_basic do |name, password|
-      # name == ENV['BASIC_AUTH_NAME'] && password == ENV['BASIC_AUTH_PASSWORD']
-      name == "name" && password == "pass"
+      # ToDo: 呼び出し場所を修正
+      require 'dotenv'
+      Dotenv.load
+      name == ENV['BASIC_AUTH_NAME'] && password == ENV['BASIC_AUTH_PASSWORD']
     end
   end
 end
