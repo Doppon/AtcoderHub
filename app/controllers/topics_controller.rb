@@ -12,7 +12,7 @@ class TopicsController < ApplicationController
 
   def create
     @topic = Topic.new(params[:topic].permit(:title))
-    @topic.save
+    @topic.save!
     redirect_to home_index_path
   end
 
