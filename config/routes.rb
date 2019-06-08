@@ -18,4 +18,6 @@ Rails.application.routes.draw do
   
   post 'posts/create' => 'post#create', as: :post_create
   delete 'posts/delete/:id' => 'post#delete', as: :post_delete
+
+  get '/login', to: 'sessions#new'
 end
