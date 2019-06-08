@@ -11,7 +11,11 @@
   <body>
     <div class="jumbotron text-center">
       <h1>Atcoder Hub</h1>
-      <p>本サイトは分からなかった問題の検討や議論を出来る場を提供しています。</p> 
+      <p>本サイトは分からなかった問題の検討や議論を出来る場を提供しています。</p>
+      <!--
+        # ToDo: ログインしていないとき表示しないようにする
+      -->
+      <%= link_to 'ログアウト', logout_path, method: :delete %>
     </div>
     <div class="container">
       <%= yield %>
