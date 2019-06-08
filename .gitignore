@@ -24,3 +24,5 @@ development.sqlite3
 *.png
 *.jpg
 *.gif
+
+.env
