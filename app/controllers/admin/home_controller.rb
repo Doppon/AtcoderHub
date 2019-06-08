@@ -1,4 +1,5 @@
 class Admin::HomeController < ApplicationController
+  # ToDo: BASIC認証を管理画面全てに適応したい
   before_action :basic
 
   def index
