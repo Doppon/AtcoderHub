@@ -5,6 +5,7 @@ class Admin::HomeController < ApplicationController
   end
 
   private
+
   def basic
     authenticate_or_request_with_http_basic do |name, password|
       # ToDo: 呼び出し場所を修正
