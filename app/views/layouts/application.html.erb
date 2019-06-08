@@ -13,9 +13,13 @@
       <h1>Atcoder Hub</h1>
       <p>本サイトは分からなかった問題の検討や議論を出来る場を提供しています。</p>
       <!--
-        # ToDo: ログインしていないとき表示しないようにする
+        # ToDo: ナビゲーションバーを作る
       -->
-      <%= link_to 'ログアウト', logout_path, method: :delete %>
+      <% if current_user %>
+        <%= link_to 'ログアウト', logout_path, method: :delete %>
+      <% else %>
+        <%= link_to 'ログイン', login_path %>
+      <% end %>
     </div>
     <div class="container">
       <%= yield %>
