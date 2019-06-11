@@ -3,7 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    # ToDo: nameをユニークにするか他のユニークなフィールドに変更する必要あり
     user = User.find_by(name: session_params[:name])
 
     if user&.authenticate(session_params[:password])
