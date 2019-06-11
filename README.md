@@ -19,3 +19,7 @@
 
 ## 本番環境
 - https://bbs-by-rails.herokuapp.com/
+
+## LICENSE
+
+[MIT](LICENSE)
