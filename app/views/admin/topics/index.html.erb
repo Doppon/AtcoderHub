@@ -7,9 +7,8 @@
         <th>id</th>
         <th>title</th>
         <th>created_at</th>
-        <!-- ToDo: 編集画面を追加-->
-        <th>編集</th>
-        <th>削除</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +17,7 @@
         <td><%= topic.id %></td>
         <td><%= topic.title %></td>
         <td><%= topic.created_at %></td>
+        <!-- ToDo: 編集画面を追加-->
         <td>編集</td>
         <td><%= link_to '削除', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %></td>
       </tr>
