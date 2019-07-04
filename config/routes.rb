@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root to: 'home#index'
     get 'home/index'
     get 'topics/index'
+    get 'users/index'
   end
 
   root to: 'home#index'

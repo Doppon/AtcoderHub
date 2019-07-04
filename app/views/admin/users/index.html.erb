@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>管理画面 | ユーザ一覧</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>created_at</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td><%= user.created_at %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="text-center">
+    <%= link_to "HOME", admin_home_index_path %>
+  </div>
+</div>
