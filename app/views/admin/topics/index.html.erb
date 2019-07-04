@@ -18,6 +18,8 @@
         <td><%= topic.id %></td>
         <td><%= topic.title %></td>
         <td><%= topic.created_at %></td>
+        <td>編集</td>
+        <td><%= link_to '削除', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %></td>
       </tr>
       <% end %>
     </tbody>
