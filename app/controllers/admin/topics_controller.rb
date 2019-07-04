@@ -1,3 +1,4 @@
+# ToDo: Admin側のViewからこっちのコントローラーをみてくれていない
 class Admin::TopicsController < Admin::ApplicationController
   def index
     @topics = Topic.all
@@ -6,6 +7,6 @@ class Admin::TopicsController < Admin::ApplicationController
   def delete
     @topic = Topic.find(params[:id])
     @topic.destroy
-    redirect_to home_index_path
+    redirect_to admin_topics_index_path
   end
 end
