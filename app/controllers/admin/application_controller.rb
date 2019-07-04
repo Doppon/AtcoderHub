@@ -1,5 +1,6 @@
 class Admin::ApplicationController < ActionController::Base
   before_action :basic
+  layout 'admin'
 
   private
 
