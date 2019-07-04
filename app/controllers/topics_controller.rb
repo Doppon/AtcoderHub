@@ -16,6 +16,7 @@ class TopicsController < ApplicationController
     redirect_to home_index_path
   end
 
+  # Adminの方に移したい
   def delete
     @topic = Topic.find(params[:id])
     @topic.destroy
