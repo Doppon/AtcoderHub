@@ -15,4 +15,10 @@ class TopicsController < ApplicationController
     @topic.save!
     redirect_to home_index_path
   end
+
+  def delete
+    @topic = Topic.find(params[:id])
+    @topic.destroy
+    redirect_to admin_topics_index_path
+  end
 end
