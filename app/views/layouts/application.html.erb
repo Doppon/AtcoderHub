@@ -10,10 +10,6 @@
 
   <body>
     <div class="jumbotron text-center">
-      <h1>
-        <%= link_to 'Atcoder Hub', root_path %>
-      </h1>
-      <p>本サイトは分からなかった問題の検討や議論を出来る場を提供しています。</p>
       <nav class="navibar">
         <ul id="main">
           <li>Home</li>
@@ -31,6 +27,10 @@
           <div id="marker"></div>
         </ul>
       </nav>
+      <h1>
+        <%= link_to 'Atcoder Hub', root_path %>
+      </h1>
+      <p>本サイトは分からなかった問題の検討や議論を出来る場を提供しています。</p>
       <% if current_user %>
         <%= link_to 'ログアウト', logout_path, method: :delete %>
       <% else %>
