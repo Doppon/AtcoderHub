@@ -17,6 +17,23 @@
       <!--
         # ToDo: ナビゲーションバーを作る
       -->
+      <nav class="navibar">
+        <ul id="main">
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills
+            <ul class="drop">
+              <div>
+              <li>scss</li>
+              <li>jquery</li>
+              <li>html</li>
+              </div>
+            </ul>
+          </li>
+          <li>Contact</li>
+          <div id="marker"></div>
+        </ul>
+      </nav>
       <% if current_user %>
         <%= link_to 'ログアウト', logout_path, method: :delete %>
       <% else %>
