@@ -2,6 +2,9 @@
 @import "bootstrap";
 
 // ToDo: topicの方に移行する必要あり
+.jumbotron {
+  padding-top: 0;
+}
 .chat-hukidashi {
   display: inline-block; /*コメントの文字数に合わせて可変*/
   padding: 15px 20px;
