@@ -19,7 +19,7 @@
 
 .navibar {
   $min-width: 120px;
-  $maincolor: rgba(18, 88, 91, 0.899);  
+  $maincolor: linear-gradient(-45deg, #6179df, #5fc7dd);
   $secondarycolor: #3E8760;
   
   @mixin transform($value){
@@ -49,6 +49,7 @@
     display: inline-block;
     padding: 0;
     margin: 0px auto 50px;
+    width: 100%;
     li{
       color: aliceblue;
       font-size: 0.8rem;
@@ -63,44 +64,4 @@
   li{
     margin: 0;
   }
-  .drop{
-      overflow: hidden;
-      list-style: none;
-      position: absolute;
-      padding: 0;
-      width: 100%;
-      left: 0;
-      top: 48px;
-      div{
-        @include transform(translate(0,-100%));
-        @include transition(all 0.5s 0.1s);
-        position: relative;
-      }
-      li{
-        display:block;
-        padding: 0;
-        width: 100%;
-        background: $secondarycolor !important;
-      }
-    }
-  #marker{
-    height: 6px;
-    background: $secondarycolor !important;
-    position: absolute;
-    bottom: 0;
-    width: $min-width;
-    z-index: 2;
-    @include transition(all 0.35s);
-  }
-  
-  @for $i from 1 through 4{
-    #main li:nth-child(#{$i}){
-      &:hover ul div{
-       @include transform(translate(0,0)); 
-      }
-      &:hover ~ #marker{
-        @include transform(translate(#{(-1+$i)*$min-width},0));
-      }
-    }    
-  }  
 }
