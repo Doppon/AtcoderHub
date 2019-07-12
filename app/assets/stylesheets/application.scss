@@ -19,10 +19,16 @@
 
 #textarea {
   border-radius: 10px;
+  vertical-align: middle;
   height: 40px;
   max-height: 200px;
   line-height: 35px;
   width: 85%;
+}
+
+.submit {
+  height: 40px;
+  border-radius: 10px;
 }
 
 .background-chat {

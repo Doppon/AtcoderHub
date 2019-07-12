@@ -17,7 +17,7 @@
         <p><%= f.text_field :name %></p>
         <%= f.text_area :body, id: "textarea", placeholder: "本文" %>
         <%= f.hidden_field :topic_id %>
-        <%= f.submit "投稿する" %>
+        <%= f.submit "投稿する", class: "submit" %>
       <% end %>
     </div>
   </div>
