@@ -16,6 +16,14 @@
   border: 1px solid gray;
   border-radius: 10px;
 }
+
+#textarea {
+  width: 200px;
+  max-height: 200px;
+  padding: 8px;
+  line-height: 20px;
+}
+
 .background-chat {
   background-color: rgba(#0c5c66, 0.23);
 }
