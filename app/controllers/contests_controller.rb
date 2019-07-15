@@ -1,25 +1,25 @@
-class TopicsController < ApplicationController
+class ContestsController < ApplicationController
 
   def show
-    @topic = Topic.find(params[:id])
-    @newpost = Post.new(topic_id: params[:id])
-    @posts = Post.where(topic_id: params[:id])
+    @contest = Contest.find(params[:id])
+    @newpost = Post.new(contest_id: params[:id])
+    @posts = Post.where(contest_id: params[:id])
   end
 
   def new
-    @newTopic = Topic.new
+    @newContest = Contest.new
   end
 
   def create
-    @topic = Topic.new(params[:topic].permit(:title))
-    @topic.save!
+    @contest = Contest.new(params[:contest].permit(:title))
+    @contest.save!
     redirect_to home_index_path
   end
 
   # ToDo: Adminの方に移したい
   def delete
-    @topic = Topic.find(params[:id])
-    @topic.destroy
-    redirect_to admin_topics_index_path
+    @contest = Contest.find(params[:id])
+    @contest.destroy
+    redirect_to admin_contests_index_path
   end
 end
