@@ -6,7 +6,7 @@
         <p>
           <div style="display: inline-block;"><%= post.name %> : </div>
           <div class="chat-hukidashi someone"><%= post.body %></div>
-          <%= link_to '削除', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>     
+          <%= link_to '削除', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
         </p>
       <% end %>
     </div>
