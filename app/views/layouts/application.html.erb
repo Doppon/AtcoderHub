@@ -14,7 +14,11 @@
         <ul id="main">
           <li><%= link_to 'Home', root_path %></li>
           <li>About</li>
-          <li>Mypage</li>
+          <li>
+            <% if current_user %>
+                <%= link_to 'Mypage', mypage_index_path %>
+            <% end %>
+          </li>
           <li>
             <% if current_user %>
               <%= link_to 'Logout', logout_path, method: :delete %>
