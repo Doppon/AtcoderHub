@@ -20,9 +20,4 @@
 
 development.sqlite3
 
-# 一時的に画像の読み込みを制御
-*.png
-*.jpg
-*.gif
-
 .env
