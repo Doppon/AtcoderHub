@@ -7,14 +7,14 @@
       </tr>
     </thead>
     <tbody>
-      <% @topics.each do |topic| %>
+      <% @contests.each do |contest| %>
       <tr>
-        <td><%= link_to topic.title, topics_show_path(topic.id) %></td>
+        <td><%= link_to contest.title, contests_show_path(contest.id) %></td>
       </tr>
       <% end %>
     </tbody>
   </table>
   <div class="text-center">
-    <%= link_to "新しいトピックを作成する", topics_new_path %>
+    <%= link_to "新しいトピックを作成する", contests_new_path %>
   </div>
 </div>

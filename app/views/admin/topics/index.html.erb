@@ -12,14 +12,14 @@
       </tr>
     </thead>
     <tbody>
-      <% @topics.each do |topic| %>
+      <% @contests.each do |contest| %>
       <tr>
-        <td><%= topic.id %></td>
-        <td><%= topic.title %></td>
-        <td><%= topic.created_at %></td>
+        <td><%= contest.id %></td>
+        <td><%= contest.title %></td>
+        <td><%= contest.created_at %></td>
         <!-- ToDo: 編集画面を追加-->
         <td>編集</td>
-        <td><%= link_to '削除', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %></td>
+        <td><%= link_to '削除', contest_delete_path(contest.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %></td>
       </tr>
       <% end %>
     </tbody>

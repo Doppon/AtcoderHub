@@ -1,7 +1,7 @@
 <div class="container">
   <h2>トピック新規登録</h2>
 
-  <%= form_for @newTopic, url: {controller: 'topics', action: 'create'} do |f| %>
+  <%= form_for @newContest, url: {controller: 'contests', action: 'create'} do |f| %>
     <div class="form-group">
       <label>タイトル</label>
       <%= f.text_field :title, :class => 'form-control' %>
