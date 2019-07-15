@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'mypage/index'
   resources :users
   namespace :admin do
     root to: 'home#index'
@@ -11,6 +10,8 @@ Rails.application.routes.draw do
   root to: 'home#index'
   
   get 'home/index'
+
+  get 'mypage/index'
 
   get 'topics/index'
   get 'topics/new'
