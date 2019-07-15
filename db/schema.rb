@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_09_152216) do
+ActiveRecord::Schema.define(version: 2019_07_15_185610) do
+
+  create_table "contests", force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "name"
@@ -21,16 +27,8 @@ ActiveRecord::Schema.define(version: 2019_04_09_152216) do
     t.index ["topic_id"], name: "index_posts_on_topic_id"
   end
 
-  create_table "topics", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "name"
-    # password
-    # password_confirmation
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
