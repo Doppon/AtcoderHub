@@ -10,27 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_09_152216) do
+ActiveRecord::Schema.define(version: 2019_07_15_201703) do
 
-  create_table "posts", force: :cascade do |t|
-    t.string "name"
-    t.text "body"
-    t.integer "topic_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["topic_id"], name: "index_posts_on_topic_id"
-  end
-
-  create_table "topics", force: :cascade do |t|
+  create_table "contests", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "posts", force: :cascade do |t|
+    t.string "name"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "contests_id"
+    t.integer "contest_id"
+    t.index ["contest_id"], name: "index_posts_on_contest_id"
+    t.index ["contests_id"], name: "index_posts_on_contests_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
-    # password
-    # password_confirmation
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

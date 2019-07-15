@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: 'home#index'
     get 'home/index'
-    get 'topics/index'
+    get 'contests/index'
     get 'users/index'
   end
 
@@ -13,11 +13,11 @@ Rails.application.routes.draw do
 
   get 'mypage/index'
 
-  get 'topics/index'
-  get 'topics/new'
-  get 'topics/show/:id' => 'topics#show', as: :topics_show
-  post 'topics/create' => 'topics#create'
-  delete 'topics/delete/:id' => 'topics#delete', as: :topic_delete
+  get 'contests/index'
+  get 'contests/new'
+  get 'contests/show/:id' => 'contests#show', as: :contests_show
+  post 'contests/create' => 'contests#create'
+  delete 'contests/delete/:id' => 'contests#delete', as: :contest_delete
 
   post 'posts/create' => 'post#create', as: :post_create
   delete 'posts/delete/:id' => 'post#delete', as: :post_delete

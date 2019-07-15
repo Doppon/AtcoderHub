@@ -6,6 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# ToDo: モジュール名変更する必要あり
 module BBSByRails
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -16,3 +17,5 @@ module BBSByRails
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
