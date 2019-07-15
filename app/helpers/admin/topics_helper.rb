@@ -1,2 +1,2 @@
-module Admin::TopicsHelper
+module Admin::ContestsHelper
 end
