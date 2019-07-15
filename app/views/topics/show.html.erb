@@ -5,7 +5,7 @@
       <% @posts.each do |post| %>
         <ul class="list-unstyled">
         <li class="media">
-          <img src="..." class="mr-3" alt="...">
+          <%= image_tag("logo.png", size: "64x64", alt: "アイコン", class: "mr-3") %>
           <div class="media-body">
             <h5 class="mt-0 mb-1"><%= post.name %></h5>
             <%= post.body %>
