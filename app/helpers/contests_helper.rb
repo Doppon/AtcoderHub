@@ -1,2 +1,2 @@
-module TopicsHelper
+module ContestsHelper
 end
