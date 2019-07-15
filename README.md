@@ -6,6 +6,10 @@ Atcoder Hubは競技プログラマーのためのコミュニティーです。
 Slackで流れていた情報を共有することで競技プログラマー全体の向上を目的としてます。(仮)
 ```
 
+## 公式ページ
+- URL: https://www.atcoderhub.jp
+
+
 ## 全体リファレンス
 #### ライセンス
 - [ライセンスファイルを作成するCLIツール「mklicense」](https://co.bsnws.net/article/163)
@@ -23,9 +27,6 @@ Slackで流れていた情報を共有することで競技プログラマー全
 - [Bootstrap使い方メモ１（基本＋CSS）](https://qiita.com/opengl-8080/items/2764b6db143b1a4411f6)
 - [【rails】gemを使わずにログイン機能を実装！](https://qiita.com/hayatoa/items/33584b9be47b09424472)
 - [Railsのセッション管理には何が最適か](https://qiita.com/shota_matsukawa_ga/items/a21c5cf49a1de6c9561a)
-
-## 本番環境
-- https://bbs-by-rails.herokuapp.com/
 
 ## LICENSE
 
