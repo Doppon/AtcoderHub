@@ -43,7 +43,11 @@
               <a class="nav-link" href="#">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <% if current_user %>
+                <%= link_to 'Logout', logout_path, method: :delete, class:"nav-link" %>
+              <% else %>
+                <%= link_to 'Login', login_path, class:"nav-link" %>
+              <% end %>
             </li>
           </ul>
 
@@ -52,7 +56,6 @@
     </nav>
 
     <div class="jumbotron text-center">
-      <!--
       <nav class="navibar">
         <ul id="main">
           <li><%= link_to 'Home', root_path %></li>
@@ -63,17 +66,12 @@
             <% end %>
           </li>
           <li>
-            <% if current_user %>
-              <%= link_to 'Logout', logout_path, method: :delete %>
-            <% else %>
-              <%= link_to 'Login', login_path %>
-            <% end %>
+            
           </li>          
           <li>Contact</li>
           <div id="marker"></div>
         </ul>
       </nav>
-      -->
       <h1>
         <%= link_to 'Atcoder Hub', root_path %>
       </h1>
