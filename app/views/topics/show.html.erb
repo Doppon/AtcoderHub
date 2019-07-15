@@ -3,11 +3,16 @@
     <div class="col-sm-12 background-chat">
       <h2 class="text-center"><%= @topic.title %></h2>
       <% @posts.each do |post| %>
-        <p>
-          <div style="display: inline-block;"><%= post.name %> : </div>
-          <div class="chat-hukidashi someone"><%= post.body %></div>
-          <%= link_to '削除', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
-        </p>
+        <ul class="list-unstyled">
+        <li class="media">
+          <img src="..." class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><%= post.name %></h5>
+            <%= post.body %>
+            <%= link_to '削除', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
+          </div>
+        </li>
+        </ul>
       <% end %>
     </div>
 
