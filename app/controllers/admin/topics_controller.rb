@@ -1,12 +1,12 @@
 # ToDo: Admin側のViewからこっちのコントローラーをみてくれていない
-class Admin::TopicsController < Admin::ApplicationController
+class Admin::ContestsController < Admin::ApplicationController
   def index
-    @topics = Topic.all
+    @contests = Contest.all
   end
 
   def delete
-    @topic = Topic.find(params[:id])
-    @topic.destroy
-    redirect_to admin_topics_index_path
+    @contest = Contest.find(params[:id])
+    @contest.destroy
+    redirect_to admin_contests_index_path
   end
 end
