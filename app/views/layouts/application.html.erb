@@ -15,6 +15,13 @@
           <li><%= link_to 'Home', root_path %></li>
           <li>About</li>
           <li>Mypage</li>
+          <li>
+            <% if current_user %>
+              <%= link_to 'ログアウト', logout_path, method: :delete %>
+            <% else %>
+              <%= link_to 'ログイン', login_path %>
+            <% end %>
+          </li>          
           <li>Contact</li>
           <div id="marker"></div>
         </ul>
@@ -23,11 +30,7 @@
         <%= link_to 'Atcoder Hub', root_path %>
       </h1>
       <p>本サイトは分からなかった問題の検討や議論を出来る場を提供しています。</p>
-      <% if current_user %>
-        <%= link_to 'ログアウト', logout_path, method: :delete %>
-      <% else %>
-        <%= link_to 'ログイン', login_path %>
-      <% end %>
+      
     </div>
     <div class="container">
       <%= yield %>
