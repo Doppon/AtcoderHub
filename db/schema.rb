@@ -23,10 +23,8 @@ ActiveRecord::Schema.define(version: 2019_07_15_201703) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "contests_id"
     t.integer "contest_id"
     t.index ["contest_id"], name: "index_posts_on_contest_id"
-    t.index ["contests_id"], name: "index_posts_on_contests_id"
   end
 
   create_table "users", force: :cascade do |t|
