@@ -1,5 +1,7 @@
 {
   "name": "AtcoderHub",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "admin-lte": "2.4.18"
+  }
 }
