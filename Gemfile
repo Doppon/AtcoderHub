@@ -34,9 +34,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem "actionview", ">= 5.2.2.1"
 
-gem "bootstrap", ">= 4.3.1"
-gem 'jquery-rails'
-
 gem 'dotenv-rails'
 
 group :development, :test do
