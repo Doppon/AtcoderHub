@@ -1,5 +1,8 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
+@import "admin-lte/dist/css/AdminLTE.min";
+@import "admin-lte/dist/css/skins/skin-blue.min";
+@import "admin-lte/plugins/iCheck/all";
+@import "admin-lte/bower_components/bootstrap/dist/css/bootstrap";
 
 // ToDo: contestの方に移行する必要あり
 .jumbotron {
